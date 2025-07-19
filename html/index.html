@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>API Postman Exercise</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="menu-bar">
+        <div class="leftSide">
+          <img class="logo" src="../images/logo.webp" alt="Logo" />
+        </div>
+        <div class="centerSide">
+          <select name="city" id="mosque-select">
+            <option value="mosque1">Tunis</option>
+            <option value="mosque2">Bizerte</option>
+            <option value="mosque3">Sousse</option>
+            <option value="mosque4">Kairouan</option>
+            <option value="mosque5">Sfax</option>
+            <option value="mosque6">Gabes</option>
+            <option value="mosque7">Gafsa</option>
+          </select>
+        </div>
+        <div class="rightSide">
+          <button id="btn">Get Salath</button>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="rightbox carte">
+          <div class="title">elfajer</div>
+          <div class="date">05:00</div>
+        </div>
+        <div class="mainbox carte">
+          <div class="date">16:00</div>
+          <div class="title">current time</div>
+        </div>
+        <div class="leftbox carte">
+          <div class="title">joum3a</div>
+          <div class="date">18:00</div>
+        </div>
+      </div>
+
+      <div id="timeShalat">
+        <div class="soub7 carte">
+          <div class="title">Soub7</div>
+          <div class="date">4:00</div>
+        </div>
+        <div class="thouhr carte">
+          <div class="title">Thouhr</div>
+          <div class="date">12:00</div>
+        </div>
+        <div class="aser carte">
+          <div class="title">Aser</div>
+          <div class="date">16:00</div>
+        </div>
+        <div class="megrib carte">
+          <div class="title">Megrib</div>
+          <div class="date">18:00</div>
+        </div>
+        <div class="icha carte">
+          <div class="title">Icha</div>
+          <div class="date">20:00</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/index.js" type="module"></script>
+</html>

@@ -1,0 +1,246 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+#root {
+    background-image: url("../images/zitouna-mosque.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    height: min(90vh, 650px);
+    width: min(90%, 800px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+#root::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+
+#menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 100;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#menu-bar:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#main, #timeShalat {
+    margin-top: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.leftSide {
+    flex: 1;
+    cursor: pointer;
+    padding-left: 20px;
+    transition: transform 0.2s ease;
+}
+
+.leftSide:hover {
+    transform: translateX(5px);
+}
+
+.centerSide {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mosque-select {
+    width: 220px;
+    height: 45px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#mosque-select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    transform: translateY(-2px);
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#btn {
+    width: 120px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+#btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+#main{
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+
+}
+.rightbox {
+  width: 125px;
+  height: 75px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.mainbox {
+  font-size: 32px;
+  width: 220px;
+  height: 120px;
+  position: absolute;
+  top: 0px;
+  left: 280px;
+}
+.mainbox .title {
+  font-size: 22px;
+}
+.leftbox{
+  width: 125px;
+  height: 75px;
+  border-left: 1px solid #eee;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+
+}
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+
+
+#timeShalat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    width: 95%;
+    height: 100px;
+    margin: 15px auto;
+    margin-top: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.soub7, .thouhr, .aser, .megrib, .icha {
+    width: 90px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
+
+.soub7:hover, .thouhr:hover, .aser:hover, .megrib:hover, .icha:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+}
